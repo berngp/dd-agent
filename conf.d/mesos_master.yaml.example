@@ -1,0 +1,15 @@
+init_config:
+    default_timeout: 2
+
+# To notify on every service, set a list of notified uses here.
+#
+#    notify:
+#        - user1@example.com
+#        - pagerduty
+
+
+instances:
+    - url: http://localhost:5050
+      tags:
+          - mesos_local_master
+          - berngp-mbp
